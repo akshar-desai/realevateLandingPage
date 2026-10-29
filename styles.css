@@ -50,7 +50,7 @@ a {
 
 nav {
   position: fixed;
-  top: 0;
+  top: -10px;
   left: 0;
   width: 100%;
   padding: 3rem;
@@ -100,6 +100,7 @@ footer {
   width: 100%;
   height: 100svh;
   overflow: hidden;
+ 
 }
 
 .hero-overlay {
@@ -143,7 +144,7 @@ footer {
 
 .hero-copy {
   position: absolute;
-  bottom: 10svh;
+  bottom: 5svh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -166,7 +167,7 @@ footer {
   text-transform: uppercase;
   border: 2px solid var(--dark);
   padding: 0.5rem 1.5rem;
-  width: max-content;
+  font-size: 10px;
   transform: translateY(100%);
   will-change: transform, opacity;
   opacity: 0;
@@ -174,32 +175,35 @@ footer {
 
 .hero-review-text-container {
 
-  /* background-color:#f2f2f2; */
-
-
-  border: 1px solid #616161;
-  width: 100%;
+   width: 100%;
   height: 100px;
-  overflow-y: auto;
+  border: 1px solid #616161;
   border-radius: 5px;
-  padding: 15px;
+  padding: 12px 15px;
+  overflow: hidden;
 
 
 }
 
 .hero-review-text {
-  /* background-color:#f2f2f2; */
-
-  border: none;
-  padding: 2px;
-  text-align: left;
+  
+  display: block;
   width: 100%;
-  height: 100px;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  margin: 0;
   resize: none;
   outline: none;
+  background: transparent;
+  font-family: monospace;
   font-size: 14px;
+  line-height: 1.8;
   color: #4d4d4d;
-  text-indent: 0px;
+  text-align: left;
+  overflow-y: auto;
+ 
 }
 
 .marquee {
